@@ -12,10 +12,4 @@ nav_order: 4
 ### MONETA
 **2026 · Manuscript in Submission**
 
-Single-reference BGA inspection research for semiconductor automated optical inspection (AOI).
-
----
-
-## Patent Applications
-
-Patent applications will be added after the filing information is verified.
+Single-reference BGA inspection research for semiconductor automated optical inspection (AOI), focusing on reliable CPU-based inspection under limited reference data.

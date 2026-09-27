@@ -362,8 +362,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-last_name: [Ahn]
-first_name: [Heeyoung, H.]
+  last_name: [Ahn]
+  first_name: [Heeyoung, H.]
 
   style: apa
   locale: en

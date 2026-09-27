@@ -1,65 +1,44 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Selected AI and software projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+### On-device AI-based Smart Vehicle Safety Blackbox System
+**2025 · Industry Collaboration: Qualcomm**
 
-{% else %}
+An on-device AI safety system that analyzes driver voice and surrounding environments to detect lane departure, vehicle warnings, abnormal behavior, horns, and sirens in real time on Rubik Pi.
 
-<!-- Display projects without categories -->
+**Tech:** Rubik Pi · On-device AI · Computer Vision · Audio Recognition · Edge AI
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+---
 
-  <!-- Generate cards for each project -->
+### VIP — Voice Interview Partner
+**2024–2025 · Industry Collaboration: OKESTRO**
 
-{% if page.horizontal %}
+A gamified, voice-based AI mock interview application that combines level-based challenges, feedback, and repeated practice to improve interview training engagement.
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+**Tech:** GPT-4o · Speech-to-Text · Flutter · Firebase
+
+---
+
+### ALPHA CAR
+**2024–2025 · Industry Collaboration: maum.ai · CAR321**
+
+An AI vehicle consulting platform that provides real-time voice interaction, up-to-date vehicle information, and personalized recommendations using RAG and Realtime API.
+
+**Tech:** RAG · Realtime API · Electron · React · Firebase
+
+---
+
+### AI Pill Recognition Application
+**2024**
+
+A YOLOv8-based mobile application that recognizes pills from camera images and provides medication information, pharmacy search, medication reminders, and chatbot assistance.
+
+🏆 **Bronze Award — 20th Hansung University Engineering Competition**
+
+**Tech:** YOLOv8 · Computer Vision · Object Detection

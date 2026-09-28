@@ -74,3 +74,26 @@ h1,h2,h3{line-height:1.2;letter-spacing:-.025em}h1{font-size:clamp(2.8rem,7vw,5.
 .scenario-figure{margin:24px 0 8px}
 .scenario-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}
 .scenario-figure figcaption{margin-top:12px;color:var(--muted);font-size:.92rem;line-height:1.6}
+
+/* Chronological project list */
+.project-year-group{display:grid;grid-template-columns:140px minmax(0,1fr);gap:34px;padding:10px 0 62px}
+.project-year{font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;letter-spacing:-.04em;line-height:1;position:sticky;top:100px;align-self:start}
+.project-list{border-top:1px solid var(--text)}
+.project-list-item{display:grid;grid-template-columns:150px minmax(0,1fr) 28px;gap:24px;align-items:start;padding:25px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:padding-left .18s ease}
+.project-list-item:hover{padding-left:8px}
+.project-list-date{color:var(--muted);font-size:.88rem;font-weight:650;padding-top:5px}
+.project-list-main h2{font-size:1.28rem;margin:0 0 7px}
+.project-list-main p{margin:0;color:var(--muted);font-size:.96rem}
+.project-list-topline{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.project-list-topline h2{margin-bottom:7px}
+.project-list-label{display:inline-flex;align-items:center;font-size:.72rem;font-weight:750;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:3px 8px;margin-bottom:7px}
+.project-list-arrow{font-size:1.2rem;color:var(--muted);padding-top:1px;transition:transform .18s ease,color .18s ease}
+.project-list-item:hover .project-list-arrow{transform:translateX(4px);color:var(--accent)}
+@media(max-width:760px){
+  .project-year-group{grid-template-columns:1fr;gap:14px;padding-bottom:48px}
+  .project-year{position:static}
+  .project-list-item{grid-template-columns:1fr 24px;gap:8px 14px;padding:21px 0}
+  .project-list-date{grid-column:1/-1;padding-top:0}
+  .project-list-main{grid-column:1}
+  .project-list-arrow{grid-column:2;grid-row:2;align-self:center}
+}

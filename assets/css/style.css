@@ -69,3 +69,8 @@ h1,h2,h3{line-height:1.2;letter-spacing:-.025em}h1{font-size:clamp(2.8rem,7vw,5.
   .hero-layout{grid-template-columns:1fr;gap:34px}
   .profile-panel{width:min(240px,72vw)}
 }
+
+/* Research scenario */
+.scenario-figure{margin:24px 0 8px}
+.scenario-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}
+.scenario-figure figcaption{margin-top:12px;color:var(--muted);font-size:.92rem;line-height:1.6}
